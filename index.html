@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="./resources/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="description" content="CaFe-TeleVision: A Coarse-to-Fine Teleoperation System with Immersive Situated Visualization for Enhanced Ergonomics">
+  <meta name="keywords" content="Teleoperation, Robot, Bimanual, VR, Immersive, CURI Robot, Retargeting, Ergonomics, Visual Feedback">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CaFe-TeleVision</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <link rel="icon" href="./resources/favicon.ico">
+</head>
+<body>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CaFe-TeleVision: A Coarse-to-Fine Teleoperation System with Immersive Situated Visualization for Enhanced Ergonomics</h1>
+            <h2 style="display:block">
+              <span class="is-size-4">IEEE Robotics and Automation Letters (RA-L) 2025</span>
+            </h2>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/Zixin-Tang">Zixin Tang</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Yiming Chen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://leph.io/quentinrouxel/">Quentin Rouxel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Dianxi Li</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="">Shuang Wu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://feichenlab.com">Fei Chen</a>
+            </span>
+            <span class="author-block is-size-5" style="display:block">
+              Department of Mechanical and Automation Engineering, T-Stone Robotics Institute, The Chinese University of Hong Kong, Hong Kong
+            </span>
+            <span class="author-block">
+              <img src="./resources/logos/logo_clover.gif" alt="logo clover" width="8%" style="margin:1%"></img>
+              <img src="./resources/logos/logo_cuhk.png" alt="logo cuhk" width="30%" style="margin:1%"></img>
+            </span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="resources/CaFe-TeleVision_2025.pdf"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2512.14270"
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>ArXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/Zixin-Tang/CaFe-TeleVision" 
+                   class="external-link button is-normal is-rounded is-dark is-size-5">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom: 0">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds no-bottom-padding">
+        <video autoplay loop playsinline controls src="./resources/video.mp4" width="100%" style="border-radius:10px; "></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="row is-full-width">
+          <img src="resources/media/crop_overview.png" class="interpolation-image" alt="overview" style="display: block; margin-left: auto; margin-right: auto" />
+        </div>
+        <div class="content has-text-justified is-size-5">
+            <br/>
+            <p>Teleoperation presents a promising paradigm for remote control and robot proprioceptive data collection. Despite recent progress, current teleoperation systems still suffer from limitations in efficiency and ergonomics, particularly in challenging scenarios. In this paper, we propose CaFe-TeleVision, a coarse-to-fine teleoperation system with immersive situated visualization for enhanced ergonomics. At its core, a coarse-to-fine control mechanism is proposed in the retargeting module to bridge workspace disparities, jointly optimizing efficiency and physical ergonomics. To stream immersive feedback with adequate visual cues for human vision systems, an on-demand situated visualization technique is integrated in the perception module, which reduces the cognitive load for multi-view processing. The system is built on a humanoid collaborative robot and validated with six challenging bimanual manipulation tasks.
+User study among 24 participants confirms that CaFe-TeleVision enhances ergonomics with statistical significance, indicating a lower task load and a higher user acceptance during teleoperation. Quantitative results also validate the superior performance of our system across six tasks, surpassing comparative methods by up to 28.89% in success rate and accelerating by 26.81% in completion time.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">Methodology</h2>
+      </div>
+      <div class="row is-three-fifths">
+        <img src="resources/media/crop_workflow.png" class="interpolation-image" alt="Workflow" width="80%" style="display: block; margin-left: auto; margin-right: auto" />
+      </div>
+      <div class="row is-full-width">
+        <img src="resources/media/crop_modules.png" class="interpolation-image" alt="Modules" width="60%" style="display: block; margin-left: auto; margin-right: auto" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">Quantitative Comparison</h2>
+      </div>
+      <div class="row is-full-width">
+        <div class="columns is-centered">
+          <div class="column">
+            <img src="resources/media/table_results.png" class="interpolation-image" alt="Table results" style="display: block; margin-right: auto;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <div class="rows is-centered ">
+      <div class="row is-full-width">
+        <h2 class="title is-2" style="width: 100%; text-align: center; padding-bottom: 10px;">BibTeX</h2>
+      </div>
+      <div class="row is-full-width">
+          <a href="resources/CaFe-TeleVision_2025.pdf"><img src="resources/pages.png" class="interpolation-image" alt="Paper pages" style="display: block; margin-left: auto; margin-right: auto; width: 70%" /></a>
+      </div>
+      <div class="row is-full-width">
+        <pre><code>@article{tang2025cafetelevision,
+  title={CaFe-TeleVision: A Coarse-to-Fine Teleoperation System with Immersive Situated Visualization for Enhanced Ergonomics}, 
+  author={Tang, Zixin and Chen, Yiming and Rouxel, Quentin and Li, Dianxi and Wu, Shuang and Chen, Fei},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
+}</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
